@@ -19,4 +19,18 @@ def solution(clothes):
 
 clothes = [["yellowhat", "headgear"], ["bluesunglasses", "eyewear"], ["green_turban", "headgear"]]
 
-print(no_clothes)
+print(clothes)
+
+
+# counter와 reduce를 활용한 풀이
+# from collections import Counter
+# from functools import reduce
+
+# def solution(clothes):
+#     cnt = Counter([kind for name, kind in clothes])
+#     answer = reduce(lambda x, y: x*(y+1), cnt.values(), 1) - 1
+#     return answer
+
+# clothes = [["yellowhat", "headgear"], ["bluesunglasses", "eyewear"], ["green_turban", "headgear"]]
+
+# print(solution(clothes))
